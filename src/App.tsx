@@ -126,14 +126,14 @@ const exteriorHomeAuthors = [
 
 // Function to create unique IDs for each section
 const createUniqueProducts = (products: PrimaryProduct[], sectionPrefix: string): PrimaryProduct[] => {
-  return products.map((product, index) => ({
+  return products.map((product) => ({
     ...product,
     id: `${sectionPrefix}-${product.id}`
   }));
 };
 
 const createUniqueSecondaryProducts = (products: SecondaryProduct[], sectionPrefix: string): SecondaryProduct[] => {
-  return products.map((product, index) => ({
+  return products.map((product) => ({
     ...product,
     id: `${sectionPrefix}-${product.id}`
   }));

@@ -1,4 +1,3 @@
-import { ImageWithFallback } from './ImageWithFallback';
 import ProductCarousel from './ProductCarousel';
 import SecondaryProductCard, { type SecondaryProduct } from './SecondaryProductCard';
 import { type PrimaryProduct } from './PrimaryProductCard';
