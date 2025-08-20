@@ -1,4 +1,6 @@
 import CategorySection, { type CategorySectionProps, type PrimaryProduct, type SecondaryProduct } from './components/CategorySection';
+import { HeroSection } from './components/HeroSection';
+import { PageDescription } from './components/PageDescription';
 
 // Base data template for duplication
 const baseProducts: PrimaryProduct[] = [
@@ -662,6 +664,7 @@ const exteriorHomeData: CategorySectionProps = {
 export default function App() {
   return (
     <div className="min-h-screen bg-gray-50">
+            <HeroSection />
       <CategorySection {...gatherData} />
       <CategorySection {...cookDineData} />
       <CategorySection {...plantsGardenData} />
@@ -669,6 +672,7 @@ export default function App() {
       <CategorySection {...learnPlayData} />
       <CategorySection {...buildBestData} />
       <CategorySection {...exteriorHomeData} />
+            <PageDescription />
     </div>
   );
 }
