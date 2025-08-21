@@ -3,29 +3,25 @@ import { HeroSection } from "./components/HeroSection";
 import { sections } from "./catalogData";
 
 // Temporary CTA banner (we need to swap with real CTA component
-function CTABanner() {
-  return (
-    <div className="w-full bg-[#4e5a44] text-white py-12 px-6 flex flex-col items-center justify-center text-center">
-      <h2 className="text-2xl md:text-3xl font-semibold mb-3">(This should be replaced with CTA component)</h2>
-      <p className="max-w-xl text-base md:text-lg mb-6">
-        Start designing your dream space for outdoor living
-      </p>
-      <button className="bg-white text-[#4e5a44] px-6 py-2 rounded-lg font-medium hover:bg-gray-100 transition">
-        Explore Yardzen Design Plans
-      </button>
-    </div>
-  );
-}
+// function CTABanner() {
+//   return (
+//     <div className="w-full bg-[#4e5a44] text-white py-12 px-6 flex flex-col items-center justify-center text-center">
+//       <h2 className="font-['Arsenal'] text-2xl md:text-5xl mb-6">Start designing your dream space for outdoor living</h2>
+//       <button className="bg-white text-[#4e5a44] px-6 py-2 rounded-lg font-medium hover:bg-gray-100 transition">
+//         Explore Yardzen Design Plans
+//       </button>
+//     </div>
+//   );
+// }
 
 export default function App() {
   return (
     <>
     yardzen nav here
         <HeroSection />
-        {sections.map((section, index) => (
+        {sections.map((section) => (
           <div key={section.title}>
             <CategorySection {...section} />
-            {(index + 1) % 3 === 0 && <CTABanner />}
           </div>
         ))}
     

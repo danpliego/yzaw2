@@ -26,7 +26,7 @@ const authors = {
   ],
   cook: [
     {
-      name: "Jenn P.",
+      name: "Jennifer Pavlick",
       avatar:
         "https://images.ctfassets.net/6dgb2p7c933b/6Wuw5ywqY9ht8WpsU19mff/ab3d941fe60824740be498925424a05e/Avatar-Jenny.png",
       description:
@@ -35,7 +35,7 @@ const authors = {
   ],
   plants: [
     {
-      name: "Kendra P.",
+      name: "Kendra Poppy",
       avatar:
         "https://images.ctfassets.net/6dgb2p7c933b/d3paDeICgA7jWqCgSujDL/17ec3ab405574454f94acd4444613ff4/Avatar-Kendra.png",
       description:
@@ -44,7 +44,7 @@ const authors = {
   ],
   relax: [
     {
-      name: "Adam M.",
+      name: "Adam Messner",
       avatar:
         "https://images.ctfassets.net/6dgb2p7c933b/1KEeny3cDwLSrhM8SXu6EZ/542cdf29a0b0f0d844b8f7216cc47095/Avatar-Adam.png",
       description:
@@ -53,7 +53,7 @@ const authors = {
   ],
   play: [
     {
-      name: "Allison M.",
+      name: "Allison Messner",
       avatar:
         "https://images.ctfassets.net/6dgb2p7c933b/48p2W1KR5eFAAwWP3KHxI2/66d547b517fa496a438cc9c17a4998b2/Avatar-Allison.png",
       description:
@@ -62,7 +62,7 @@ const authors = {
   ],
   build: [
     {
-      name: "Coleman",
+      name: "Coleman Cosby",
       avatar:
         "https://images.ctfassets.net/6dgb2p7c933b/63m1E2P0sRVJDvljNUvVWj/e9e3c292f0fb5b5d262cf8543734accf/Avatar-Coleman.png",
       description:
@@ -71,7 +71,7 @@ const authors = {
   ],
   exterior: [
     {
-      name: "Alicia",
+      name: "Alicia Kim",
       avatar:
         "https://images.ctfassets.net/6dgb2p7c933b/6wSth5eX5lmDuMQlxUZQVB/9389e3a8d5257d3785feaec52eb60336/Avatar-Alicia.png",
       description:
@@ -286,7 +286,7 @@ const gatherSecondary: SecondaryProduct[] = [
     description:
       "A modern, customizable pergola kit complete with adjustable wave-pattern shade elements for flexible sun control and architectural visual interest.",
     link:
-      "https://www.crateandbarrel.com/10-round-canvas-white-sunbrella-outdoor-patio-umbrella-with-black-metal-frame/s462566",
+      "https://www.crateandbarrel.com/10-round-canvas-white-sunbrella-outdoor-patio-umbrella-with-faux-wood-metal-frame/s462596",
   },
 ];
 
@@ -312,7 +312,7 @@ const cookPrimary: PrimaryProduct[] = withAwards([
       "https://images.ctfassets.net/6dgb2p7c933b/XpECH9one03OPXGh7DHfM/3c99d220e062d7a4f284e6d7b978f1a3/32-pro-grill.jpg?h=500",
     description:
       "A sleek, professional-grade grill built for outdoor cooking—high heat performance and refined outdoor design.",
-    link: "https://elementshome.com/products/pro-32-built-in-grill/",
+    link: "https://elementshome.com/products/pro-32-freestanding-grill/",
   },
   {
     id: "3",

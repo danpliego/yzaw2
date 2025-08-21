@@ -45,7 +45,7 @@ const productImages: CollageItem[] = [
   },
   {
     src: "https://images.ctfassets.net/6dgb2p7c933b/45yxG3FoCo4KmcSbsnwUjX/84835db21e6abf8f3b983298630cee06/image-4.webp?h=1000",
-    className: "hidden md:block absolute bottom-[2%] right-[2%] w-40 sm:w-52 md:w-64 lg:w-[20rem] xl:w-[28rem]",
+    className: "hidden md:block absolute bottom-[2%] right-[0%] w-40 sm:w-52 md:w- lg:w-[15rem] xl:w-[20rem]",
   },
 ];
 
