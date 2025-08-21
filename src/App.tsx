@@ -6,7 +6,7 @@ import { sections } from "./catalogData";
 function CTABanner() {
   return (
     <div className="w-full bg-[#4e5a44] text-white py-12 px-6 flex flex-col items-center justify-center text-center">
-      <h2 className="text-2xl md:text-3xl font-semibold mb-3">Ready to start your project?</h2>
+      <h2 className="text-2xl md:text-3xl font-semibold mb-3">(This should be replaced with CTA component)</h2>
       <p className="max-w-xl text-base md:text-lg mb-6">
         Start designing your dream space for outdoor living
       </p>
@@ -20,7 +20,7 @@ function CTABanner() {
 export default function App() {
   return (
     <>
-    {/* yardzen nav here */}
+    yardzen nav here
         <HeroSection />
         {sections.map((section, index) => (
           <div key={section.title}>
@@ -28,8 +28,10 @@ export default function App() {
             {(index + 1) % 3 === 0 && <CTABanner />}
           </div>
         ))}
-        {/* <CTABanner /> */}
-      {/* include yz footer here */}
+    
+      include yz cta footer component here
+      <br />
+      include yz footer here
     </>
   );
 }
