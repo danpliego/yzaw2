@@ -131,7 +131,7 @@ export default function CategorySection({
         <div className="flex flex-col gap-4 items-start justify-start w-full">
           {/* Section Header */}
           <div className="flex flex-row items-start justify-center border-t border-[rgba(98,110,88,0.1)] pt-4 mt-6 w-full">
-            <h2 className="font-['Arsenal'] text-xl md:text-[32px] text-[#3b482f] leading-[1.2] m-0">
+            <h2 className="font-['Arsenal'] text-xl md:text-[32px] text-[#3b482f] leading-[1.2] mt-4">
               {secondarySectionTitle}
             </h2>
           </div>

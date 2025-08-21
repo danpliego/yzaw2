@@ -35,7 +35,7 @@ export default function SecondaryProductCard({ product }: SecondaryProductCardPr
             {product.title}
           </h4>
           
-          <div className="h-4 md:h-[20.8px] min-w-[48px] max-w-[90px] md:max-w-[110px]">
+          <div className="h-4 md:h-[20.8px] min-w-[48px] max-w-[80px]">
             <ImageWithFallback
               src={product.brandLogo}
               alt={`${product.title} brand logo`}
