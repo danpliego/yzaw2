@@ -44,7 +44,7 @@ export default function PrimaryProductCard({
             <div className="absolute flex h-[60px] md:h-[84.66px] items-center justify-center right-2 md:right-2 top-[-2px] w-[60px] md:w-[84.66px]">
               <div className="flex-none rotate-[345deg] scale-75 md:scale-100">
                 <ImageWithFallback
-                  src="https://images.ctfassets.net/6dgb2p7c933b/unRMz8vywblZJ1TausFST/73a347df025370e2f1b58fe16db5d34c/bestof2025.png"
+                  src="https://images.ctfassets.net/6dgb2p7c933b/29ZXJsPMsqAJJHlv3uL8dM/f7429d65179761e5853f7e4a4e52318f/winner.png"
                   alt="Award badge"
                   className="size-[69.138px] object-contain"
                 />
