@@ -4,7 +4,7 @@ import { HeroContent } from "./HeroContent";
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen bg-white">
+    <section className="relative h-[90vh] bg-white">
       {/* Background product collage */}
       <ProductCollage />
       
