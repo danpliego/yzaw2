@@ -89,7 +89,7 @@ export default function ProductCarousel({ products }: ProductCarouselProps) {
         ref={trackRef}
         className="
           flex overflow-x-auto gap-4 md:gap-6
-          px-4 md:px-6
+          px-0 md:px-0
           scroll-smooth
           snap-x snap-mandatory md:snap-none
           touch-pan-x overscroll-x-contain
@@ -111,7 +111,7 @@ export default function ProductCarousel({ products }: ProductCarouselProps) {
               shrink-0
               snap-center md:snap-none
               w-[80vw] sm:w-[78vw]
-              md:w-[280px] m-4 lg:w-[300px]
+              md:w-[280px] mr-4 lg:w-[21.5vw]
             "
           >
             <PrimaryProductCard product={product} />

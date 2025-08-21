@@ -70,7 +70,7 @@ export default function CategorySection({
 }: CategorySectionProps) {
   return (
     <div className={`relative w-full ${className}`} style={{ backgroundColor }}>
-      <div className="px-4 md:px-8 py-8 md:py-[60px] mx-auto">
+      <div className="px-4 md:px-12 py-8 md:py-[60px] mx-auto">
         {/* Hero Section - Two Column Layout */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 items-start w-full mb-8 md:mb-10">
           {/* Title - Left Column */}

@@ -21,7 +21,6 @@ export default function PrimaryProductCard({
     <a
       href={product.link || "#"}
       target="_blank"
-      rel="noopener noreferrer"
       className="flex flex-col h-full items-start justify-start min-h-[320px] md:min-h-[380px] group cursor-pointer transition-transform hover:scale-[1.02] flex-shrink-0 w-[calc(100vw-80px)] md:w-auto"
     >
       {/* Product container */}
