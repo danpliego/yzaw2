@@ -72,65 +72,19 @@ export default function ProductCarousel({ products }: ProductCarouselProps) {
     return () => window.removeEventListener("resize", onResize);
   }, []);
 
-  const arrowBase =
-    "z-10 grid place-items-center rounded-full shadow-lg ring-1 ring-black/5 bg-white/95 backdrop-blur transition " +
-    "w-10 h-10 md:w-11 md:h-11 hover:scale-105 disabled:opacity-40 disabled:cursor-not-allowed";
-
-  const iconBase =
-    "h-5 w-5 text-[#6d6e5e] transition-transform duration-150";
-
   return (
     <div className="relative w-full">
-      {/* Left/Right edge fades (desktop mostly) */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-y-0 left-0 w-8 bg-gradient-to-r from-gray-50 to-transparent"
-      />
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-y-0 right-0 w-8 bg-gradient-to-l from-gray-50 to-transparent"
-      />
-
       {/* Left Arrow */}
-      <button
-        type="button"
-        aria-label="Scroll left"
-        className={`${arrowBase} absolute left-2 top-1/2 -translate-y-1/2`}
-        onClick={() => scrollToDir("left")}
-        disabled={!canScrollLeft}
-      >
-        <svg viewBox="0 0 24 24" className={`${iconBase} group-hover:-translate-x-0.5`}>
-          <path
-            d="M15.5 19.5L8.5 12l7-7.5"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1.8"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
-      </button>
+      {canScrollLeft && (
+        <button
+          onClick={() => scrollToDir("left")}
+          className="absolute left-0 top-1/2 -translate-y-1/2 z-10 p-2 rounded-full shadow bg-white hover:bg-gray-100"
+        >
+          ←
+        </button>
+      )}
 
-      {/* Right Arrow */}
-      <button
-        type="button"
-        aria-label="Scroll right"
-        className={`${arrowBase} absolute right-2 top-1/2 -translate-y-1/2`}
-        onClick={() => scrollToDir("right")}
-        disabled={!canScrollRight}
-      >
-        <svg viewBox="0 0 24 24" className={`${iconBase} group-hover:translate-x-0.5`}>
-          <path
-            d="M8.5 19.5L15.5 12l-7-7.5"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1.8"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
-      </button>
-
+      {/* Scrollable Track */}
       <div
         ref={trackRef}
         className="
@@ -167,6 +121,16 @@ export default function ProductCarousel({ products }: ProductCarouselProps) {
         {/* Spacer so last card can center */}
         <div className="shrink-0 w-[8vw] md:hidden" aria-hidden />
       </div>
+
+      {/* Right Arrow */}
+      {canScrollRight && (
+        <button
+          onClick={() => scrollToDir("right")}
+          className="absolute right-0 top-1/2 -translate-y-1/2 z-10 p-2 rounded-full shadow bg-white hover:bg-gray-100"
+        >
+          →
+        </button>
+      )}
     </div>
   );
 }
