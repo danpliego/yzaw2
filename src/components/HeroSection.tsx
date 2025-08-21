@@ -1,9 +1,10 @@
 import { ProductCollage } from "./ProductCollage";
+
 import { ImageWithFallback } from "./ImageWithFallback";
 
 export function HeroSection() {
   return (
-    <section className="relative h-[90vh] bg-white">
+    <section className="relative h-[80vh] lg:h-[90vh] bg-white">
       {/* Background product collage */}
       <ProductCollage />
 
