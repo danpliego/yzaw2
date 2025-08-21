@@ -27,7 +27,7 @@ export default function PrimaryProductCard({
       {/* Product container */}
       <div className="flex flex-col gap-3 md:gap-[11.41px] items-start justify-start w-full">
         {/* Image container */}
-        <div className="bg-white h-[200px] md:h-[250.315px] overflow-hidden relative rounded-lg md:rounded-[11.41px] w-full">
+        <div className="bg-white h-[250px] md:h-[250.315px] overflow-hidden relative rounded-lg md:rounded-[11.41px] w-full">
           <ImageWithFallback
             src={product.image}
             alt={product.title}
@@ -36,7 +36,7 @@ export default function PrimaryProductCard({
 
           {/* Hover badge */}
           <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-90 transition-opacity duration-300">
-            <span className="bg-black/50 text-white text-xs md:text-sm px-3 py-1 rounded-full">
+            <span className="bg-black/50 backdrop-blur-[40px] text-white text-xs md:text-sm px-3 py-1 rounded-full">
               View product →
             </span>
           </div>
