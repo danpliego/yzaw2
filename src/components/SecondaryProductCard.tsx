@@ -17,7 +17,7 @@ export default function SecondaryProductCard({ product }: SecondaryProductCardPr
   return (
     <a 
       href={product.link || "#"}
-      className="bg-white border border-[rgba(0,0,0,0.1)] rounded-lg overflow-hidden group cursor-pointer transition-all hover:shadow-md hover:border-[rgba(0,0,0,0.2)]"
+      className="bg-[rgba(255,255,255,.5)] rounded-lg overflow-hidden group cursor-pointer transition-all hover:border-[rgba(0,0,0,0.2)]"
     >
       <div className="flex flex-row gap-2 md:gap-4 items-start justify-start p-4">
         {/* Image */}
