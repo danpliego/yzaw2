@@ -101,9 +101,11 @@ export default function CategorySection({
                   </h3>
                   {authors.map((author, index) => (
                     author.description && (
-                      <p key={`${author.name}-desc-${index}`} className="text-base leading-[1.4] font-light m-0">
-                        {author.description}
-                      </p>
+                      <>
+                        <p key={`${author.name}-desc-${index}`} className="text-base leading-[1.4] font-light m-0">
+                          {author.description}
+                        </p> <a href="https://yardzen.com/packages" className="underline">Explore Design Plans →</a>
+                      </>
                     )
                   ))}
                 </div>
